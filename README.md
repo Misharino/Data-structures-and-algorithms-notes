@@ -97,3 +97,20 @@ In **O(n)** time complexity, we don't really care about the constants in the par
 If we add a constant compared to \( n^2 \), at some point, the complexity will intersect, and it will grow way faster while the linear one will grow
 
 ## Stacks
+
+Stacks support these three operations:
+
+| Operation  | Big-O Time |
+|------------|------------|
+| Push       | O(1)       |
+| Pop        | O(1)       |
+| Peek/Top   | O(1)       |
+
+- Dynamic arrays satisfy all these requirements, so a stack can be implemented using a dynamic array.
+- We can push elements into the array, which is the end of the stack, and a pointer will indicate the location.
+- Stacks are an example of the usage of dynamic arrays.
+- The last element added is the first element that will be removed, similar to a magazine.
+- Stacks are LIFO (Last In, First Out) data structures.
+- We can use a stack to reverse an array. For example, turn `myArray = [3, 4, 5]` into `myArray = [5, 4, 3]` by popping its elements and pushing them into a new array.
+
+## 03 - Linked lists
