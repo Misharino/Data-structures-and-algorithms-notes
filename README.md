@@ -77,15 +77,15 @@ The cost for inserting the elements can be broken down as follows:
 
 When the array size reaches \( 2^k \) (for some integer \( k \)):
 
-- Inserting the first \( 2^k \) elements has a copying cost of \( 0 + 1 + 2 + 4 + \ldots + 2^{k-1} \), which is the sum of a geometric series.
+- Inserting the first \( $2^k$ \) elements has a copying cost of \($ 0 + 1 + 2 + 4 + \ldots + 2^{k-1} $\), which is the sum of a geometric series.
 
 The total cost for inserting \( n \) elements, where \( n \) is a power of 2:
-\[ T(n) = \sum_{i=0}^{\log_2 n} 2^i = 2^{\log_2 n + 1} - 1 = 2n - 1 \]
+\[ T(n) = $\sum_{i=0}^{\log_2 n}$ $2^i = 2^{\log_2 n + 1} - 1 = 2n - 1$ \]
 
 Thus, the average cost per insertion (amortized cost) is:
-\[ \frac{T(n)}{n} = \frac{2n - 1}{n} = 2 - \frac{1}{n} \]
+\[ $\frac{T(n)}{n} = \frac{2n - 1}{n} = 2 - \frac{1}{n}$ \]
 
-As \( n \) becomes large, \( \frac{1}{n} \) approaches 0, so the amortized cost is:
+As \( n \) becomes large, \( $\frac{1}{n}$ \) approaches 0, so the amortized cost is:
 \[ O(1) \]
 
 
