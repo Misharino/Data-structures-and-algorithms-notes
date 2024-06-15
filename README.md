@@ -69,7 +69,7 @@ To understand the amortized time complexity, consider the cost of inserting elem
 
 The total cost \( T(n) \) of inserting \( n \) elements includes both the copying of elements to a new array when resizing and the insertion of new elements. 
 
-Each time the array is resized, we double its capacity. The number of times we resize the array is \( \log_2 n \) because we double the capacity each time.
+Each time the array is resized, we double its capacity. The number of times we resize the array is \( log_2 n \) because we double the capacity each time.
 
 The cost for inserting the elements can be broken down as follows:
 - Inserting elements without resizing: \( O(1) \) per insertion.
